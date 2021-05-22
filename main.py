@@ -9,6 +9,10 @@ def DisplayOrientationLines():
     ax.quiver(0, 0, 0, 1, 0, 0, color = 'r', length = 5, arrow_length_ratio = 0.01)
     ax.quiver(0, 0, 0, 0, 1, 0, color = 'g', length = 5, arrow_length_ratio = 0.01)
     ax.quiver(0, 0, 0, 0, 0, 1, color = 'b', length = 5, arrow_length_ratio = 0.01)
+    ax.text(4.5, 0, 0, "X", (1, 0, 0), color = 'r')
+    ax.text(0, 4.5, 0, "Y", (0, 1, 0), color = 'g')
+    ax.text(0, 0, 4.5, "Z", (0, 0, 1), color = 'b')
+    
 
 x = np.linspace(0, 10, 2)
 y = np.linspace(0, 10, 2)
