@@ -47,6 +47,10 @@ def DisplayRubiksCube(cubeArray):
                 else:
                     DisplaySquare(a, b, 0, "z", cubeArray[b, a + c * 3])
 
+def SpinCube(cubeArray, direction):
+    if direction == "U1": #Rotate front 
+        
+
 #ax.plot(x, y, z, label = "Kubas lol", zdir = 'z')
 
 cubeArray = np.empty((3, 18), dtype = str)
@@ -55,6 +59,8 @@ for a in range(0, 6):
     for x in range(0, 3):
         for y in range(0, 3):
             cubeArray[y, x + a * 3] = colorArray[a]
+
+SpinCube(cubeArray, "M")
 
 DisplayOrientationLines();
 DisplayRubiksCube(cubeArray);
